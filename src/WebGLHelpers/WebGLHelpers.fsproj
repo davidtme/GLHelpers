@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefineConstants>FABLE_COMPILER;</DefineConstants>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="paket.references" />
+    <Compile Include="WebGLHelpers.fs" />
+    <Compile Include="AssetManager.fs" />
+    <Compile Include="Models.fs" />
+    <Compile Include="GameStateHandler.fs" />
+    <Compile Include="GameRender.fs" />
+    <Compile Include="Program.fs" />
+    <Content Include="package.json" />
+    <None Include="webpack.config.js" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
